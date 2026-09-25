@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="img/logo.png">
     <title>Home | Valo Hub</title>
 </head>
@@ -34,7 +35,7 @@
         <div class="hero-buttons">
             <a href="https://playvalorant.com/en-us/?utm_medium=card2%2Bwww.riotgames.com&utm_source=riotbar"
                 class="btn btn-primary" target="_blank">Začít hrát</a>
-            <a href="agents.html" class="btn btn-outline">Prohlédnout agenty</a>
+            <a href="#go-to-agenti" class="btn btn-outline">Prohlédnout agenty</a>
         </div>
 
         <div class="stats-grid">
@@ -57,10 +58,10 @@
 
     <section class="agents">
         <span class="header-agents">Oblíbení agenti</span>
-        <div class="fav-grid">
+        <div id="go-to-agenti" class="fav-grid">
             <div class="fav-agents">
                 <div class="fav-box">
-                    <img src="img/jett.png" alt="Jett" class="agent-img">
+                    <div class="agent-jett"></div>
                     <span class="fav-label">Jett</span>
                     <span class="fav-type">Duelista</span>
                 </div>
@@ -68,21 +69,85 @@
 
             <div class="fav-agents">
                 <div class="fav-box">
-                    <img src="img/jett.png" alt="Jett" class="agent-img">
-                    <span class="fav-label">Jett</span>
+                    <div class="agent-reyna"></div>
+                    <span class="fav-label">Reyna</span>
                     <span class="fav-type">Duelista</span>
                 </div>
             </div>
 
             <div class="fav-agents">
                 <div class="fav-box">
-                    <img src="img/jett.png" alt="Jett" class="agent-img">
-                    <span class="fav-label">Jett</span>
-                    <span class="fav-type">Duelista</span>
+                    <div class="agent-sage"></div>
+                    <span class="fav-label">Sage</span>
+                    <span class="fav-type">Strážce</span>
+                </div>
+            </div>
+
+            <div class="fav-agents">
+                <div class="fav-box">
+                    <div class="agent-chamber"></div>
+                    <span class="fav-label">Chamber</span>
+                    <span class="fav-type">Strážce</span>
+                </div>
+            </div>
+
+            <div class="fav-agents">
+                <div class="fav-box">
+                    <div class="agent-omen"></div>
+                    <span class="fav-label">Omen</span>
+                    <span class="fav-type">Kontrolér</span>
+                </div>
+            </div>
+
+            <div class="fav-agents">
+                <div class="fav-box">
+                    <div class="agent-clove"></div>
+                    <span class="fav-label">Clove</span>
+                    <span class="fav-type">Kontrolér</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-info">
+                <div class="footer-info-top">
+                    <img src="img/logo.png" alt="footer-logo">
+                    <span>Valo hub</span>
+                </div>
+                <p>Fanouškovský přehled agentů, map a zbraní. Nespojeno s Riot Games.</p>
+            </div>
+
+            <div class="footer-nav">
+                <span class="footer-header">NAVIGACE</span>
+                <a href="index.html">Domů</a>
+                <a href="agents.html">Agenti</a>
+                <a href="/">Mapy</a>
+                <a href="/">Zbraně</a>
+            </div>
+
+            <div class="footer-links">
+                <span class="footer-header">ODKAZY</span>
+                <a href="#go-to-info">O projektu</a>
+                <a href="https://playvalorant.com/en-us/?utm_medium=card2%2Bwww.riotgames.com&utm_source=riotbar">Riot
+                    Games</a>
+            </div>
+
+            <div class="footer-folow">
+                <div class="footer-socials">
+                    <span class="footer-header">SLEDUJTE</span>
+                    <a href="https://x.com/" target="_blank" class="social-icon">X</a>
+                    <a href="https://youtube.com/" target="_blank" class="social-icon">YT</a>
+                    <a href="https://instagram.com/" target="_blank" class="social-icon">IG</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 Valo Hub — fanouškovský projekt, VALORANT je ochranná známka Riot Games, Inc.
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
