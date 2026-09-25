@@ -2,6 +2,7 @@
     --bg-color: #0F1923;
     --bg-second-color: #262c31;
     --bg-agenti-color: #ECE8E1;
+    --bg-maps-color: #bebdba;
 
 
     --primary-color: #ECE8E1;
@@ -10,10 +11,32 @@
 
     --akcent: #FF4655;
 
+    /* COLORS TYP AGENTU */
+
     --dualista: #FF4655;
     --strazce: #3FD1C1;
     --kontroler: #ECE8E1;
     --iniciator: #F5A623;
+
+    /* COLORS MAPY */
+
+    --map-bind: #8a3a3a;
+    --map-bind-dark: #3d1f1f;
+
+    --map-haven: #3a6a8a;
+    --map-haven-dark: #1f3a4d;
+
+    --map-split: #3a8a5c;
+    --map-split-dark: #1f4d34;
+
+    --map-ascent: #8a7a3a;
+    --map-ascent-dark: #4d431f;
+
+    --map-lotus: #5a3a8a;
+    --map-lotus-dark: #2f1f4d;
+
+    --map-icebox: #3a5c8a;
+    --map-icebox-dark: #1f2f4d;
 }
 
 body {
@@ -306,9 +329,88 @@ body {
     margin-bottom: 10px;
 }
 
-/* FOOTER SECTION -- Nic pod to nepsat */
+/* MAPS PAGE */
 
-/* FOOTER */
+.maps {
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: var(--bg-agenti-color);
+}
+
+.header-maps {
+    display: block;
+    color: var(--bg-color);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.map-card {
+    background-color: var(--bg-color);
+    padding: 0 0 16px;
+    overflow: hidden;
+}
+
+.map-thumb {
+    height: 110px;
+    margin-bottom: 12px;
+}
+
+.map-card .fav-label {
+    display: block;
+    padding: 0 16px;
+    margin-bottom: 6px;
+}
+
+.map-desc {
+    color: var(--secondary-color);
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 0 16px;
+    margin: 0;
+}
+
+/* Gradienty jednotlivých map */
+
+.map-bind .map-thumb {
+    background: linear-gradient(135deg, var(--map-bind), var(--map-bind-dark));
+}
+
+.map-haven .map-thumb {
+    background: linear-gradient(135deg, var(--map-haven), var(--map-haven-dark));
+}
+
+.map-split .map-thumb {
+    background: linear-gradient(135deg, var(--map-split), var(--map-split-dark));
+}
+
+.map-ascent .map-thumb {
+    background: linear-gradient(135deg, var(--map-ascent), var(--map-ascent-dark));
+}
+
+.map-lotus .map-thumb {
+    background: linear-gradient(135deg, var(--map-lotus), var(--map-lotus-dark));
+}
+
+.map-icebox .map-thumb {
+    background: linear-gradient(135deg, var(--map-icebox), var(--map-icebox-dark));
+}
+
+@media (max-width: 700px) {
+    .maps-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FOOTER SECTION -- Nic pod to nepsat */
 
 footer {
     background-color: #0a1219;

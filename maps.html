@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="img/logo.png">
-    <title>Home | Valo Hub</title>
+    <title>Maps | Valo Hub</title>
 </head>
 
 <body>
@@ -20,92 +20,66 @@
         <nav id="navbar">
             <a href="index.html"><img src="img/logo.png" alt="logo-valo"></a>
             <ul>
-                <li><a href="index.html" class="list-item active">Domů</a></li>
+                <li><a href="index.html" class="list-item">Domů</a></li>
                 <li><a href="agents.html" class="list-item">Agenti</a></li>
-                <li><a href="maps.html" class="list-item">Mapy</a></li>
+                <li><a href="index.html" class="list-item active">Mapy</a></li>
                 <li><a href="index.html" class="list-item">Zbraně</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <span class="badge">Nová sezóna</span>
-        <h1>Bránit. Útočit. Vyhrát kola.</h1>
-        <p>Taktické 5v5 hry, unikátní agenti a mapy, které vyžadují přesnou mušku i týmovou hru.</p>
+        <span class="badge">Bojiště</span>
+        <h1>Poznej terén. Ovládni mapu.</h1>
+        <p>Každá mapa má vlastní rozložení, úžiny a strategické body. Nauč se je nazpaměť.</p>
         <div class="hero-buttons">
             <a href="https://playvalorant.com/en-us/?utm_medium=card2%2Bwww.riotgames.com&utm_source=riotbar"
                 class="btn btn-primary" target="_blank">Začít hrát</a>
-            <a href="#go-to-agenti" class="btn btn-outline">Prohlédnout agenty</a>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stats">
-                <div class="stats-box">
-                    <span class="stats-label">Agenti</span>
-                    <span class="stats-number">29</span>
-                </div>
-                <div class="stats-box">
-                    <span class="stats-label">Mapy</span>
-                    <span class="stats-number">12</span>
-                </div>
-                <div class="stats-box">
-                    <span class="stats-label">Herní režimy</span>
-                    <span class="stats-number">8</span>
-                </div>
-            </div>
+            <a href="#go-to-maps" class="btn btn-outline">Prohlédnout mapy</a>
         </div>
     </section>
 
-    <section class="agents">
-        <span class="header-agents">Oblíbení agenti</span>
-        <div id="go-to-agenti" class="fav-grid">
-            <div class="fav-agents">
-                <div class="fav-box">
-                    <div class="agent-jett"></div>
-                    <span class="fav-label">Jett</span>
-                    <span class="fav-type">Duelista</span>
-                </div>
+    <section class="maps">
+        <span id="go-to-maps" class="header-maps">Všechny mapy</span>
+        <div class="maps-grid">
+
+            <div class="map-card map-bind">
+                <div class="map-thumb"></div>
+                <span class="fav-label">Bind</span>
+                <p class="map-desc">Marocká mapa se dvěma teleporty, které hráčům umožňují rychlé přesuny mezi místy.
+                </p>
             </div>
 
-            <div class="fav-agents">
-                <div class="fav-box">
-                    <div class="agent-reyna"></div>
-                    <span class="fav-label">Reyna</span>
-                    <span class="fav-type">Duelista</span>
-                </div>
+            <div class="map-card map-haven">
+                <div class="map-thumb"></div>
+                <span class="fav-label">Haven</span>
+                <p class="map-desc">Jediná mapa se třemi místy na bombu, což vyžaduje širší rozložení týmu.</p>
             </div>
 
-            <div class="fav-agents">
-                <div class="fav-box">
-                    <div class="agent-sage"></div>
-                    <span class="fav-label">Sage</span>
-                    <span class="fav-type">Strážce</span>
-                </div>
+            <div class="map-card map-split">
+                <div class="map-thumb"></div>
+                <span class="fav-label">Split</span>
+                <p class="map-desc">Vertikální mapa plná lan a úzkých uliček, ideální pro postavy s mobilitou.</p>
             </div>
 
-            <div class="fav-agents">
-                <div class="fav-box">
-                    <div class="agent-chamber"></div>
-                    <span class="fav-label">Chamber</span>
-                    <span class="fav-type">Strážce</span>
-                </div>
+            <div class="map-card map-ascent">
+                <div class="map-thumb"></div>
+                <span class="fav-label">Ascent</span>
+                <p class="map-desc">Italské náměstí s otevřenými průhledy a dveřmi, které lze ovládat na dálku.</p>
             </div>
 
-            <div class="fav-agents">
-                <div class="fav-box">
-                    <div class="agent-omen"></div>
-                    <span class="fav-label">Omen</span>
-                    <span class="fav-type">Kontrolér</span>
-                </div>
+            <div class="map-card map-lotus">
+                <div class="map-thumb"></div>
+                <span class="fav-label">Lotus</span>
+                <p class="map-desc">Tři místa na bombu a dveře, které se dají prostřílet, drží tempo hry vysoké.</p>
             </div>
 
-            <div class="fav-agents">
-                <div class="fav-box">
-                    <div class="agent-clove"></div>
-                    <span class="fav-label">Clove</span>
-                    <span class="fav-type">Kontrolér</span>
-                </div>
+            <div class="map-card map-icebox">
+                <div class="map-thumb"></div>
+                <span class="fav-label">Icebox</span>
+                <p class="map-desc">Vertikální industriální areál s lany, kde je krytí klíčové pro přežití.</p>
             </div>
+
         </div>
     </section>
 
