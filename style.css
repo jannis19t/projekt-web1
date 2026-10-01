@@ -520,3 +520,133 @@ footer {
     font-size: 14px;
     color: var(--secondary-color);
 }
+
+/* RESPONSIVE DESIGN - MOBIL */
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        flex-direction: column;
+        margin-bottom: 35px;
+        padding: 10px 15px 20px;
+    }
+
+    #navbar img {
+        height: 65px;
+        margin: 0 0 15px;
+    }
+
+    #navbar ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .list-item {
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .hero {
+        padding: 15px 20px 40px;
+    }
+
+    .badge {
+        display: inline-block;
+        margin: 0 0 20px;
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        margin: 0 0 20px;
+        font-size: 44px;
+        line-height: 1.05;
+    }
+
+    .hero p {
+        margin: 0 0 30px;
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    .hero-buttons {
+        margin: 0;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn.btn-primary,
+    .btn.btn-outline {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding: 13px 20px;
+    }
+
+    .stats-grid {
+        margin: 35px 20px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-label {
+        font-size: 20px;
+    }
+
+    .stats-number {
+        font-size: 32px;
+    }
+
+    .agents,
+    .maps {
+        padding: 40px 20px 30px;
+    }
+
+    .fav-grid,
+    .maps-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .map-card {
+        width: 100%;
+    }
+
+    .map-thumb {
+        height: 130px;
+    }
+
+    .fav-label {
+        font-size: 26px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        margin: 14px -20px 0;
+        padding: 10px 20px 0;
+        font-size: 12px;
+    }
+}
