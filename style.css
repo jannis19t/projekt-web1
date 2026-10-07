@@ -523,10 +523,12 @@ footer {
 }
 
 .footer-validators {
+    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 25px;
 }
