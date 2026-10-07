@@ -522,6 +522,31 @@ footer {
     color: var(--secondary-color);
 }
 
+.footer-validators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.footer-validators a {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.footer-validators img {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+.footer-validators a:hover {
+    transform: scale(1.1);
+}
+
+
 /* RESPONSIVE DESIGN - MOBIL */
 
 * {
