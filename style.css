@@ -549,6 +549,7 @@ footer {
 }
 
 
+
 /* RESPONSIVE DESIGN - MOBIL */
 
 * {
@@ -676,5 +677,20 @@ footer {
         margin: 14px -20px 0;
         padding: 10px 20px 0;
         font-size: 12px;
+    }
+
+    .footer-validators {
+        grid-column: 1 / -1;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .footer-validators img {
+        height: 35px;
+        width: auto;
+        max-width: 45vw;
     }
 }
